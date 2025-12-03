@@ -4,7 +4,7 @@ from tqdm import tqdm
 import time
 
 # Load your ChEMBL dataset
-chembl_df = pd.read_csv(r"C:[path]\antibio_chembl_mics.csv")  # use your actual filename and path
+chembl_df = pd.read_csv(r"C:[path]\ecoli_mics.csv")  # use your actual filename and path
 smiles_list = chembl_df["smiles"].dropna().tolist() # use the column tag with the "smiles"
 
 records = []
